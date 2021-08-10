@@ -6,7 +6,7 @@
 
 body{
    background: rgb(221,244,252);
-   background: linear-gradient(180deg, rgba(221,244,252,1) 0%, rgba(255,255,255,1) 100%);
+   background: linear-gradient(180deg, rgba(221,244,252,1) 0% , rgba(255,255,255,1) 100%);
 }
 
 #header{
