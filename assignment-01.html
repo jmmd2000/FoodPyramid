@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>James Doyle - 19496366</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+  <link rel="stylesheet" href="assignment-01.css" type="text/css">
+  <!--Link to Font Awesome Kit to use their arrow icons for adding/subtracting on the pyramid-->
+  <script src="https://kit.fontawesome.com/7d56e59c67.js" crossorigin="anonymous"></script>
+  <script src="assignment-01.js"></script>
+  </head>
+  <body>
+    
+    <button class="date-button" id="date" onclick="showDateBox()">Date</button>
+  <h1 id="header">The Food Pyramid</h1>
+  
+  <!--This is the div that holds the date form-->
+  <div id="date-input"><br>
+    <input type="text" placeholder="Day" id="dayInput"></input><br><br>
+    <input type="text" placeholder="Month" id="monthInput"></input><br><br>
+    <input type="text" placeholder="Year" id="yearInput"></input><br><br>
+
+    <button class="formButton" onclick="submitDate()">Submit</button>
+    <button class="formButton" onclick="cancel()">Cancel</button>
+
+  </div>
+
+  
+
+  <div class="wrapper">
+    <div class="pyramid">
+
+      <!--Treats Div-->
+       <div class="pyramid_section"> 
+         <div>
+          <p class="counter">
+          <button onclick="minusTreats()" class="hide1">
+            <i class="fas fa-arrow-left larrow"></i>
+          </button>
+          <input type="text" id="treats" class="counter" value="0"></input>
+          <button onclick="plusTreats()" class="hide1">
+            <i class="fas fa-arrow-right rarrow"></i>
+          </button></p>  <p class="text" id="t">
+            Treats
+          </p>
+       </div>
+      </div>
+
+      <!--Fruits Div-->
+       <div class="pyramid_section">
+          <div>
+            <p class="counter">
+            <button onclick="minusFruit()" class="hide1">
+              <i class="fas fa-arrow-left larrow"></i>
+            </button>
+            &nbsp;&nbsp;<input type="text" id="fruit" class="counter" value="0"></input>&nbsp;&nbsp;
+            <button onclick="plusFruit()" class="hide1">
+              <i class="fas fa-arrow-right rarrow"></i>
+            </button></p> <p class="text">
+              Fruit
+            </p>
+          </div>
+        </div>
+
+        <!--Carbs Div-->
+       <div class="pyramid_section">
+          <div>
+            <p class="counter">
+            <button onclick="minusCarbs()" class="hide1">
+              <i class="fas fa-arrow-left larrow"></i>
+            </button>
+            &nbsp;&nbsp;<input type="text" id="carbs" class="counter" value="0"></input>&nbsp;&nbsp;
+            <button onclick="plusCarbs()" class="hide1">
+              <i class="fas fa-arrow-right rarrow"></i>
+            </button></p> <p class="text">
+              Carbohydrates
+            </p>
+          </div>
+        </div>
+
+        <!--Fats Div-->
+        <div class="pyramid_section">
+          <div>
+            <p class="counter">
+            <button onclick="minusFats()" class="hide1">
+              <i class="fas fa-arrow-left larrow"></i>
+            </button>
+            &nbsp;&nbsp;<input type="text" id="fats" class="counter" value="0"></input>&nbsp;&nbsp;
+            <button onclick="plusFats()" class="hide1">
+              <i class="fas fa-arrow-right rarrow"></i>
+            </button></p> <p class="text">
+              Healthy Fats
+            </p>
+          </div>
+        </div>
+
+        <!--Proteins Div-->
+        <div class="pyramid_section">
+          <div>
+            <p class="counter">
+            <button onclick="minusProteins()" class="hide1">
+              <i class="fas fa-arrow-left larrow"></i>
+            </button>
+            &nbsp;&nbsp;<input type="text" id="proteins" class="counter" value="0"></input>&nbsp;&nbsp;
+            <button onclick="plusProteins()" class="hide1">
+              <i class="fas fa-arrow-right rarrow"></i>
+            </button></p> <p class="text">
+              Proteins
+            </p>
+          </div>
+        </div>
+
+        <!--Vegtables Div-->
+        <div class="pyramid_section">
+          <div>
+            <p class="counter">
+            <button onclick="minusVeg()" class="hide1">
+              <i class="fas fa-arrow-left larrow"></i>
+            </button>
+            &nbsp;&nbsp;<input type="text" id="veg" class="counter" value="0"></input>&nbsp;&nbsp;
+            <button onclick="plusVeg()" class="hide1">
+              <i class="fas fa-arrow-right rarrow"></i>
+            </button></p> <p class="text">
+              Vegetables
+            </p>
+          </div>
+        </div>
+       
+    <!--This div holds the date shown below the pyramid-->
+    </div>
+    <br>
+      <h2 class="date" id="date1">[</h2>&nbsp;
+      <h2 class="date" id="dayDate">0</h2>&nbsp;
+      <h2 class="date" id="date2">/</h2>&nbsp;
+      <h2 class="date" id="monthDate">0</h2>&nbsp;
+      <h2 class="date" id="date3">/</h2>&nbsp;
+      <h2 class="date" id="yearDate">0</h2>&nbsp;
+      <h2 class="date" id="date4">]</h2>&nbsp;
+ </div>
+  </body>
+</html>
